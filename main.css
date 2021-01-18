@@ -481,7 +481,7 @@ box-shadow: 15px 15px 30px #EAEAEA;
 .meimg {
   background-repeat: no-repeat;
   background-size:contain;
-  background-image: url("mee.jpg");
+  background-image: url("me.jpg");
   padding:50%;
   float: right;
   margin-top: 25%;
