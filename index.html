@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetna</title>
+
+
+        <link rel="stylesheet" href="main.css">
+              <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
+
+</head>
+
+<style>
+
+  h1 {
+    color: #B5958F;
+  }
+
+  a:-webkit-any-link {
+      color: none;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+</style>
+<body>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <div class="mobilemenu">
+      <a href="index.html"><div class="mobilelogo">
+      </div></a>
+
+      <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+  <div class="filler"></div>
+
+  <div class="bodycontainer">
+      <div class ="container">
+
+        <div class="contentholder">
+          <div class="introducingme" style="text-align:center;">
+          <h1 style="color:black"> Hello! I'm Chetna</h1>
+          <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" type="text/css" />
+          <h2 style="color:#4600FF">
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "Interaction", "Product", "UX/UI", "Visual" ]'></span> Designer
+          </h2>
+          <h3 style="width:100%; font-size: 24px;" >An Interaction Designer who focuses on providing solutions to real life problems along with best user experience & has a passion for Product, UI/UX & Visual design. </h3>
+  </div>
+
+        </div>
+        <div class="arrow arrow-first"></div>
+        <div class="arrow arrow-second"></div>
+
+
+<div class="projectholder" style="margin-top:40%">
+  <a href="campfire.html"><div class="projimg1"></div></a>
+</div>
+
+<div class="projectholder" style="margin-top:20%">
+  <a href="perspective.html"><div class="projimg3"></div></a>
+</div>
+
+<div class="projectholder" style="margin-top:20%">
+  <a href="pixverse.html"><div class="projimg2"></div></a>
+</div>
+
+<div class="projectholder" style="margin-top:20%">
+  <a href="RIP.html"><div class="projimg4"></div></a>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="footer" style="margin-top:20%"><div class="foot">
+Get in touch : <br><br> <div class="meet"><a href="mailto:chetc1200@gmail.com">   Email </a></div><div class="meet1"><a href="www.linkedin.com/in/chetna-chavda"> Linkedin </a></div> <br><br> <div class="who">Coded with 💙 by Chetna Chavvda &#169;</div>
+</div></div>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<script>
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+</script>
+
+
+  </body>
