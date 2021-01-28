@@ -1022,3 +1022,24 @@ margin-bottom: 0%;
 background-image: url("imgme.png");
   padding:40%;
 }
+
+.texttext {
+  text-align: center;
+  display: grid;
+}
+
+
+h7 {
+  font-weight:400;
+  font-size: 25px;
+font-family: 'Raleway', sans-serif;
+  color: #707070;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+}
+
+h7:hover {
+  color: #4500FE;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
