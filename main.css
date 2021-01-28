@@ -654,9 +654,9 @@ animation: 1s ease-out 0s 1 slideInFromRight;
 .imagefolks {
   background-repeat: no-repeat;
   background-size:contain;
-  background-image: url("folks.png");
-  padding:20%;
-  margin-left: 18%;
+  background-image: url("folksree.png");
+  padding:10%;
+  margin-left: 0%;
 }
 
 .image2 {
