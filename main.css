@@ -362,7 +362,7 @@ grid-template-columns: 30% 70%;
 
   background-repeat: no-repeat;
   background-size:cover;
-background-image: url("camppp.png");
+background-image: url("YNhome1.png");
   padding:25%;
   border-radius: 15px;
   box-shadow: 8px 8px 14px #EAEAEA;
@@ -372,7 +372,7 @@ background-image: url("camppp.png");
 
 .projimg1:hover {
 /* opacity: 0.9; */
-background-image: url("campneew.png");
+background-image: url("YNhome3.png");
   /* background-image: url("camp3.png"); */
 transition: all 0.5s ease-in-out;
 box-shadow: 15px 15px 30px #EAEAEA;
@@ -392,7 +392,7 @@ background-image: url("pix.png");
 
 .projimg2:hover {
 /* opacity: 0.9; */
-background-image: url("pixnew.png");
+background-image: url("pixnew2.png");
   /* background-image: url("camp3.png"); */
 transition: all 0.5s ease-in-out;
 box-shadow: 15px 15px 30px #EAEAEA;
@@ -504,7 +504,7 @@ box-shadow: 15px 15px 30px #EAEAEA;
 .meimg {
   background-repeat: no-repeat;
   background-size:contain;
-  background-image: url("meeee.jpg");
+  background-image: url("me1.jpg");
   padding:50%;
   float: right;
   margin-top: 25%;
@@ -733,7 +733,7 @@ animation: 1s ease-out 0s 1 slideInFromRight;
 .imagefolks2 {
   background-repeat: no-repeat;
   background-size:contain;
-  background-image: url("persfolks.png");
+  background-image: url("ynname.png");
   padding:20%;
   margin-left: 18%;
 }
@@ -808,6 +808,13 @@ animation: 1s ease-out 0s 1 slideInFromRight;
   padding:30%;
 }
 
+.ynstyletile {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url("styleguideyn.png");
+  padding:30%;
+}
+
 .characters {
   background-repeat: no-repeat;
   background-size:contain;
@@ -843,12 +850,48 @@ animation: 1s ease-out 0s 1 slideInFromRight;
   padding:30%;
 }
 
+.navigationyn {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url("navigationyn.png");
+  padding:30%;
+}
+
+.piximgs {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url("piximgs1.png");
+  padding:30%;
+}
+
+.prototypeyn {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url("prototypeynn.png");
+  padding:30%;
+}
+
+.userflowyn {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url("userflowyn.png");
+  padding:30%;
+}
+
+.tgauyn {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url("targetauyn.png");
+  padding:20%;
+}
+
 .models {
   background-repeat: no-repeat;
   background-size:contain;
   background-image: url("3dmodels.png");
   padding:30%;
 }
+
 
 
 body
